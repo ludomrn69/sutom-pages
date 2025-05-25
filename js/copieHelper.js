@@ -63,6 +63,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
             }
             return lien;
         };
+        // Ajout de la méthode personnalisée pour générer le texte à copier
+        CopieHelper.genererTextePartage = function (mot, tentatives, grille) {
+            return [
+                "Le mot était : " + mot,
+                "",
+                "Score : " + tentatives + "/6",
+                grille,
+                "",
+                "https://ludomrn69.github.io/sutom-pages"
+            ].join("\n");
+        };
         return CopieHelper;
     }());
     exports.default = CopieHelper;
