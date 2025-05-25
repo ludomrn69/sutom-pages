@@ -83,10 +83,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
             this._resumeTexte = entete + resultatsEmojis.join("\n");
             this._resumeTexteLegacy = entete + resultatsEmojisLegacy.join("\n");
         };
-        FinDePartiePanel.prototype.attacherPartage = function () {
-            var resumeBouton = document.getElementById("fin-de-partie-panel-resume-bouton");
-            copieHelper_1.default.attacheBoutonCopieLien(resumeBouton, this._resumeTexte + "\n\nhttps://sutom.nocle.fr", "Résumé copié dans le presse papier.");
-        };
+FinDePartiePanel.prototype.attacherPartage = function () {
+    var resumeBouton = document.getElementById("fin-de-partie-panel-resume-bouton");
+    var textePerso = "Le mot était : " + this._motATrouver + "\n\n" + this._resumeTexte + "\n\nhttps://ludomrn69.github.io/sutom-pages";
+    copieHelper_1.default.attacheBoutonCopieLien(resumeBouton, textePerso, "Résumé copié dans le presse papier.");
+};
         FinDePartiePanel.prototype.afficher = function () {
             var _a;
             var titre;
