@@ -73,9 +73,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
             this._partieEstFinie = true;
             var numeroGrille = Math.round((dateGrille - origine) / (24 * 3600 * 1000)) + 1;
             var afficherChrono = ((_a = sauvegardeur_1.default.chargerConfig()) !== null && _a !== void 0 ? _a : configuration_1.default.Default).afficherChrono;
-            var entete = "#SUTOM #" +
-                numeroGrille +
-                " " +
+            var entete = "#SUTOM " +
                 (estBonneReponse ? resultats.length : "-") +
                 "/6" +
                 (afficherChrono ? " " + tempsHelper_1.default.genererTempsHumain(dureeMs) : "") +
