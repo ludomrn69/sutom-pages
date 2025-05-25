@@ -131,7 +131,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         FinDePartiePanel.prototype.attacherPartageStats = function (stats) {
             var resumeBouton = document.getElementById("fin-de-partie-panel-stats-bouton");
             var resumeTexte = statistiquesDisplayer_1.default.genererResumeTexteStatistiques(stats);
-            copieHelper_1.default.attacheBoutonCopieLien(resumeBouton, resumeTexte + "\n\nhttps://sutom.nocle.fr", "Résumé copié dans le presse papier.");
+            var textePerso = "Le mot était : " + this._motATrouver + "\n\n" + resumeTexte + "\n\nhttps://ludomrn69.github.io/sutom-pages";
+            copieHelper_1.default.attacheBoutonCopieLien(resumeBouton, textePerso, "Résumé copié dans le presse papier.");
         };
         return FinDePartiePanel;
     }());
