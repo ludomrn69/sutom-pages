@@ -57,17 +57,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
                 "Les lettres entourées d'un carré rouge sont bien placées.<br />" +
                 "Les lettres entourées d'un cercle jaune sont mal placées (mais présentes dans le mot).<br />" +
                 "Les lettres qui restent sur fond bleu ne sont pas dans le mot.<br />" +
-                "</div>" +
-                "<p>" +
-                "En cas de soucis, vous pouvez contacter " +
-                '<a target="_blank" href="https://bsky.app/profile/jonathanmm.nocle.fr">@jonathanmm.nocle.fr</a> sur BlueSky, ' +
-                '<a target="_blank" href="https://mastodon.social/@JonathanMM">@JonathanMM@mastodon.social</a> sur mastodon ' +
-                'ou <a target="_blank" href="https://twitter.com/Jonamaths">@Jonamaths</a> sur twitter. − ' +
-                '<a target="_blank" href="https://framagit.org/JonathanMM/sutom">Page du projet</a><br />' +
-                'Basé sur l\'excellent <a target="_blank" href="https://www.nytimes.com/games/wordle/index.html">Wordle</a> et le regretté Motus.<br />' +
-                "Merci à Emmanuel pour l'aide sur les mots à trouver, et à GaranceAmarante pour l'aide sur le dictionnaire.<br />" +
-                'Les icônes proviennent de <a target="_blank" href="https://m3.material.io/styles/icons/overview">Material Design</a>' +
-                "</p>";
+                "</div>";
             this._panelManager.setContenu(titre, contenu);
             this._panelManager.setClasses(["regles-panel"]);
             this._panelManager.setCallbackFermeture(function () {
